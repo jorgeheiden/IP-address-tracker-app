@@ -46,3 +46,33 @@
 .contenedor__input button:active{
     transform: scale(0.97);
 }
+.validacion{
+    margin-top: 0.6rem;
+    color: red;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 600px){
+    .contenedor__input{
+        width: 90%;
+    }
+    .contenedor__input input{
+        height: 2.9rem;
+    }
+    .contenedor__input button{
+        height: 2.9rem;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .contenedor__input{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .contenedor__input{
+        width: 37%;
+    }
+}

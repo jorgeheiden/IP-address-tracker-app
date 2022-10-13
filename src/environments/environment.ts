@@ -3,8 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  ipGeolocalizaion:{
+    url: 'https://geo.ipify.org/api/v2/country,city?',
+    key: 'apiKey=at_E44TBafqypPnhGCeAnLcyZdOPs2ol'
+  }
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file

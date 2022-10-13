@@ -5,3 +5,19 @@ app-datos{
     left: 12%
     
 }
+@media only screen and (max-width: 600px){
+    app-datos{
+        left: 5%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    app-datos{
+        left: 2.5%;
+    }
+}
+@media only screen and (min-width: 992px){
+    app-datos{
+        left: 12%;
+    }
+}

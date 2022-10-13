@@ -29,3 +29,40 @@
     width: 0;
     height: 2.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .contenedor{
+        flex-direction: column;
+        width: 90vw;
+    }
+    .contenedor__dato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        padding-left: 0;
+    }
+    .contenedor__dato h1{
+        font-size: 0.9rem;
+        margin: 1.3rem 0 0rem 0;
+    }
+    .contenedor__dato p{
+        font-size: 1.6rem;
+        margin-top: 0.6rem;
+    }
+    .borde{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .contenedor{
+        width: 95vw;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .contenedor{
+        width: 75vw;
+    }
+}

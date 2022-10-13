@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'IP-address-tracker-app';
+  datos!:any
+  
+  datosDeLocalizacion(datos:any){
+    this.datos = datos
+    console.log(this.datos)
+  }
+  
 }

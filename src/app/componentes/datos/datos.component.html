@@ -1,23 +1,24 @@
+
 <section>
-    <div class="contenedor">
-        <div class="contenedor__dato">
+    <div class="contenedor"  *ngIf="datosObtenidos" >
+        <div class="contenedor__dato" >
             <h1>IP ADDRESS</h1>
-            <P>192.212.174.101</P>
+            <P>{{datosObtenidos.ip}}</P>
         </div>
         <div class="borde"></div>
         <div class="contenedor__dato">
             <h1>LOCATION</h1>
-            <P>Brooklin, NY 10001</P>
+            <P>{{datosObtenidos.location.region}}, {{datosObtenidos.location.city}}</P>
         </div>
         <div class="borde"></div>
         <div class="contenedor__dato">
             <h1>TIMEZONE</h1>
-            <p>UTC-05:00</p>
+            <p>UTC {{datosObtenidos.location.timezone}}</p>
         </div>
         <div class="borde"></div>
         <div class="contenedor__dato">
             <h1>ISP</h1>
-            <P>SpaceX StarLink</P>
+            <P>{{datosObtenidos.isp}}</P>
         </div>
     </div>
 </section>

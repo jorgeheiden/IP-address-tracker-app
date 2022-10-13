@@ -1,7 +1,9 @@
 <header class="contenedor">
     <h1>IP Address Tracker</h1>
     <div class="contenedor__input">
-        <input type="text" placeholder="Buscar por IP o Dominio" />
-        <button></button>
+        <input type="text" [formControl]="busqueda" (keyup.enter)="buscar(busqueda.value)" placeholder="Buscar por IP o Dominio" />
+        <button (click)="buscar(busqueda.value)"></button>
     </div>
+    <div class="validacion" *ngIf="busqueda.dirty && busqueda.errors?.['required']" >Campo requerido</div>
+    <div class="validacion" *ngIf="busqueda.dirty && busqueda.errors?.['minlength'] " >Minimo de caracteres 3</div>
 </header>

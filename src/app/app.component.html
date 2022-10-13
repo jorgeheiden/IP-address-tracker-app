@@ -1,5 +1,5 @@
 <div class="contenedor">
-    <app-header></app-header>
-    <app-datos></app-datos>
-    <app-mapa></app-mapa>
+    <app-header (nuevoEvento)="datosDeLocalizacion($event)" ></app-header>
+    <app-datos [datos]="datos" ></app-datos>
+    <app-mapa [datos]="datos" ></app-mapa>
 </div>
