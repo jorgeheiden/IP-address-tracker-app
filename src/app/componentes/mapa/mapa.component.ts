@@ -15,8 +15,8 @@ export class MapaComponent implements OnInit {
         this.map.remove()
       }
       
-      this.map = new Map('map').setView([valor.location.lat, valor.location.lng], 6)
-      marker([valor.location.lat, valor.location.lng]).addTo(this.map)
+      this.map = new Map('map').setView([(valor.location.lat + 2.2), valor.location.lng], 6)
+      marker([(valor.location.lat), valor.location.lng]).addTo(this.map)
       this.mapa()
      }
   }
